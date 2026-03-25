@@ -1,0 +1,19 @@
+{
+  "name": "test-suite-starter",
+  "version": "1.0.0",
+  "description": "Battle-tested Jest test templates for common patterns: utilities, data sync, quotas, API resilience, logging, filter merging, and security middleware.",
+  "license": "MIT",
+  "keywords": [
+    "jest",
+    "testing",
+    "templates",
+    "test-suite",
+    "starter",
+    "react-native",
+    "serverless",
+    "node"
+  ],
+  "scripts": {
+    "test": "echo 'Copy templates into your project and adapt them — see README.md'"
+  }
+}
