@@ -26,6 +26,9 @@ These aren't toy examples — they're derived from real bugs caught in productio
 | `component-interaction.test.js` | Button presses, form validation, modal visibility | React/React Native UI components |
 | `custom-hooks.test.js` | Initial state, state updates, cleanup, async effects | Custom React hooks |
 | `network-interceptor.test.js` | HTTP-level interception, request verification, retry simulation | Any outbound API calls (nock/MSW) |
+| `code-comments.test.js` | JSDoc coverage, @param/@returns accuracy, TODO markers | Any JS codebase valuing documentation |
+| `test-suite-health.test.js` | Coverage gaps, skipped tests, duplicate names, empty blocks | Any project with 3+ test files |
+| `data-standardization.test.js` | Secrets, real emails, API keys, PII, .env files | Any public/open-source repository |
 
 ## Quick Start
 
@@ -56,7 +59,10 @@ test-suite-starter/
 │   ├── api-resilience.test.js         # External API call resilience
 │   ├── structured-logging.test.js     # JSON structured logging verification
 │   ├── filter-aggregation.test.js     # Multi-source filter/preference merging
-│   └── origin-and-rate-limit.test.js  # Security middleware (origin + rate limit)
+│   ├── origin-and-rate-limit.test.js  # Security middleware (origin + rate limit)
+│   ├── code-comments.test.js         # JSDoc/documentation quality (wide)
+│   ├── test-suite-health.test.js     # Meta-test: suite validation (wide)
+│   └── data-standardization.test.js  # Public repo data safety CI gate (wide)
 ├── configs/
 │   ├── jest.config.cjs.js             # Jest config for CommonJS projects
 │   └── jest.config.esm.js             # Jest config for ESM projects
